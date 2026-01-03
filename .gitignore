@@ -1,0 +1,40 @@
+# Build results
+bin/
+obj/
+dist/
+build/
+
+# Visual Studio cache/options
+.vs/
+.vscode/
+
+# Visual Studio user-specific files
+*.user
+*.userosscache
+*.sln.iml
+*.suo
+*.vcxproj.user
+
+# NuGet
+packages/
+*.nupkg
+*.snupkg
+
+# IDE files
+.idea/
+*.swp
+*.swo
+*~
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Rider
+.idea/
+*.sln.iml
+
+# Build artifacts
+*.dll
+*.exe
+*.pdb
