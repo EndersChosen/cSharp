@@ -1,14 +1,31 @@
-using System;
+Random random = new();
+int daysUntilExpiration = random.Next(12);
+int discountPercentage = 0;
 
+// Your code goes here
+Console.WriteLine(daysUntilExpiration);
 
-class Program
+if (daysUntilExpiration <= 10)
 {
-    static void Main()
+    if (daysUntilExpiration <= 5)
     {
-        Random dice = new();
-        int roll = dice.Next(1,7);
-        Console.WriteLine(roll);
-        int result = Random.Next();
-        Console.WriteLine(result);
+        if (daysUntilExpiration <= 1)
+        {
+            if (daysUntilExpiration < 1)
+            {
+                Console.WriteLine("Your subscription has expired");
+            }
+            Console.WriteLine($"Your subscription expires in {daysUntilExpiration} days.\nRenew now and save 20 % !");
+        }
     }
+
+    else
+    {
+        Console.WriteLine("Your subscription expires within a day!\nRenew now and save 10 % !");
+    }
+}
+
+else
+{
+    Console.WriteLine("Your subscription will expire soon. Renew now!");
 }
