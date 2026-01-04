@@ -6,6 +6,7 @@ int discountPercentage = 0;
 Console.WriteLine(daysUntilExpiration);
 
 if (daysUntilExpiration <= 10)
+
 {
     if (daysUntilExpiration <= 5)
     {
